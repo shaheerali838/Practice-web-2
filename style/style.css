@@ -133,14 +133,11 @@ nav ul a {
 
 /* ************* section Navbar button ends here ************* */
 
-/* ************* section Icons starts here ************* */
-
 .icons {
   display: flex;
   gap: 1rem;
   margin-right: 1.5rem;
 }
-/* ************* section Icons ends here ************* */
 
 /* ************* section Navbar ends here ************* */
 
