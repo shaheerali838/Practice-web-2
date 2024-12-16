@@ -22,6 +22,7 @@ body {
 .main-logo .logo {
   display: flex;
   align-items: center;
+  gap: 0.5rem;
 }
 nav {
   display: flex;
@@ -37,6 +38,10 @@ nav {
   margin-bottom: 1em;
   max-width: 25px;
   height: auto;
+  &:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+  }
 }
 
 .logo h1 {
@@ -88,6 +93,21 @@ nav ul a::before {
 }
 nav ul a:hover::before {
   scale: 1;
+}
+.icons {
+  display: flex;
+  gap: 1rem; /* Space between icons */
+  margin-right: 1.5rem;
+}
+
+.icons i {
+  font-size: 1.2rem; /* Icon size */
+  cursor: pointer;
+  transition: transform 0.3s ease; /* Smooth hover effect */
+}
+
+.icons i:hover {
+  transform: translateY(-5px); /* Lifts icon up on hover */
 }
 
 /* ************* section Navbar button starts here ************* */
@@ -150,12 +170,6 @@ nav ul a:hover::before {
 }
 
 /* ************* section Navbar button ends here ************* */
-
-.icons {
-  display: flex;
-  gap: 1rem;
-  margin-right: 1.5rem;
-}
 
 /* ************* section Navbar ends here ************* */
 
@@ -245,6 +259,15 @@ nav ul a:hover::before {
   -moz-transform: scaleX(-1);
   -ms-transform: scaleX(-1);
   -o-transform: scaleX(-1);
+  &:hover {
+    cursor: pointer;
+    filter: drop-shadow(0px 0px 40px rgba(14, 39, 141, 0.702));
+    scale: 1.1;
+    -webkit-scale: 1.1;
+    -moz-scale: 1.1;
+    -ms-scale: 1.1;
+    -o-scale: 1.1;
+  }
 }
 /* ************* section Hero ends here ************* */
 
@@ -339,6 +362,15 @@ nav ul a:hover::before {
   .img {
     margin-top: 1.8rem;
     width: 30rem;
+    &:hover {
+      cursor: pointer;
+      filter: drop-shadow(0px 0px 40px rgba(14, 39, 141, 0.702));
+      scale: 1.1;
+      -webkit-scale: 1.1;
+      -moz-scale: 1.1;
+      -ms-scale: 1.1;
+      -o-scale: 1.1;
+    }
   }
   .text {
     .sub-text {
@@ -392,6 +424,15 @@ nav ul a:hover::before {
   .img {
     margin-top: 1.8rem;
     width: 30rem;
+    &:hover {
+      cursor: pointer;
+      filter: drop-shadow(0px 0px 40px rgba(14, 39, 141, 0.702));
+      scale: 1.1;
+      -webkit-scale: 1.1;
+      -moz-scale: 1.1;
+      -ms-scale: 1.1;
+      -o-scale: 1.1;
+    }
   }
   .text {
     .sub-text {
@@ -628,6 +669,15 @@ nav ul a:hover::before {
   height: auto;
   max-width: 100%;
   border-radius: 8px;
+  &:hover {
+    cursor: pointer;
+    filter: drop-shadow(0px 0px 40px rgba(14, 39, 141, 0.702));
+    scale: 1.1;
+    -webkit-scale: 1.1;
+    -moz-scale: 1.1;
+    -ms-scale: 1.1;
+    -o-scale: 1.1;
+  }
 }
 
 /* ************* section Featured 5 ends here ************* */
@@ -760,6 +810,7 @@ nav ul a:hover::before {
 .featured-7 {
   display: flex;
   padding: 5rem;
+  padding-bottom: 10rem;
   background-color: #f8f8f8;
   justify-content: center;
   align-items: center;
@@ -808,18 +859,6 @@ nav ul a:hover::before {
         }
         width: 400px;
         height: 400px;
-        img {
-          margin-top: 10rem;
-          aspect-ratio: 1;
-          object-fit: cover;
-          width: 100%;
-          height: 100%;
-          transition: linear 0.3s;
-          -webkit-transition: linear 0.3s;
-          -moz-transition: linear 0.3s;
-          -ms-transition: linear 0.3s;
-          -o-transition: linear 0.3s;
-        }
         .buton-11 {
           background-color: blue;
           color: white;
@@ -833,12 +872,27 @@ nav ul a:hover::before {
           color: blue;
           border: 1px solid blue;
         }
+        img {
+          margin-top: 10rem;
+          aspect-ratio: 1;
+          object-fit: cover;
+          width: 100%;
+          height: 100%;
+          transition: linear 0.3s;
+          -webkit-transition: linear 0.3s;
+          -moz-transition: linear 0.3s;
+          -ms-transition: linear 0.3s;
+          -o-transition: linear 0.3s;
+        }
         img:hover {
           transform: scale(1.1);
           -webkit-transform: scale(1.1);
           -moz-transform: scale(1.1);
           -ms-transform: scale(1.1);
           -o-transform: scale(1.1);
+
+          cursor: pointer;
+          filter: drop-shadow(0px 0px 40px rgba(14, 39, 141, 0.702));
         }
         .number {
           color: #1c1558;
@@ -923,5 +977,122 @@ nav ul a:hover::before {
 /* ************* section Featured 7 ends here ************* */
 
 /* ************* section Footer starts here ************* */
+
+footer {
+  background-color: #1c1558;
+  padding: 2rem;
+  color: white;
+  /* margin-top: 5rem; */
+}
+
+footer .cols {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+footer .cols .col-1,
+footer .cols .col-2,
+footer .cols .col-3,
+footer .cols .col-4 {
+  flex: 1;
+  max-width: 250px;
+  text-align: left;
+}
+
+footer h3 {
+  font-size: 1rem;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+
+footer ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+footer ul li {
+  margin-bottom: 0.5rem;
+}
+
+footer ul li a {
+  font-size: 0.8rem;
+  color: white;
+  text-decoration: none;
+  text-transform: capitalize;
+  transition: color 0.3s ease;
+  -webkit-transition: color 0.3s ease;
+  -moz-transition: color 0.3s ease;
+  -ms-transition: color 0.3s ease;
+  -o-transition: color 0.3s ease;
+}
+
+footer ul li a:hover {
+  color: #c3c3c3;
+}
+
+footer .col-1 .main {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+footer .col-1 .main a {
+  text-decoration: none;
+}
+
+footer .col-1 .main img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+footer .col-1 .main h1 {
+  font-size: 1rem;
+  color: white;
+  text-transform: uppercase;
+}
+
+footer .col-1 .para p {
+  font-size: 0.8rem;
+  color: white;
+  margin-top: 1rem;
+}
+
+footer .col-1 .icons {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+footer .col-1 .icons a i {
+  color: white;
+  font-size: 1.2rem;
+  padding: 0.5rem;
+  border: 1px solid white;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+}
+
+footer .col-1 .icons a i:hover {
+  background-color: white;
+  color: #1c1558;
+  cursor: pointer;
+}
 
 /* ************* section Footer ends here ************* */
