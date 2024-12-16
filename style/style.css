@@ -820,6 +820,19 @@ nav ul a:hover::before {
           -ms-transition: linear 0.3s;
           -o-transition: linear 0.3s;
         }
+        .buton-11 {
+          background-color: blue;
+          color: white;
+          border: none;
+          text-transform: capitalize;
+        }
+
+        .buton-11:hover {
+          text-transform: capitalize;
+          background-color: transparent;
+          color: blue;
+          border: 1px solid blue;
+        }
         img:hover {
           transform: scale(1.1);
           -webkit-transform: scale(1.1);
@@ -879,6 +892,7 @@ nav ul a:hover::before {
           -ms-border-radius: 50%;
           -o-border-radius: 50%;
         }
+
         i:hover {
           transform: rotate(360deg);
           -webkit-transform: rotate(360deg);
@@ -907,3 +921,7 @@ nav ul a:hover::before {
 }
 
 /* ************* section Featured 7 ends here ************* */
+
+/* ************* section Footer starts here ************* */
+
+/* ************* section Footer ends here ************* */
